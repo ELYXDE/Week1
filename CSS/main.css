@@ -1,0 +1,451 @@
+/* WEBSITE COLOUR SCHEME */
+
+/*
+
+Main Colours:
+
+Primary colour - rgb(183, 154, 246); //purple for navigation links
+Secondary colour - rgb(53, 38, 80); //darker purple
+Third colour - rgb(200, 177, 250); //lighter purple*/
+
+/*-------------------------------------------------------*/
+
+/*---------------MOBILE DEFAULT STYLES--------------------*/
+
+/* apply a natural box model layout to all of our elements */
+
+*{
+
+		box-sizing: border-box;
+}
+
+
+/*--------------------------------------------------------*/
+
+
+/* ---------------------  CUSTOM FONTS ------------------ */
+
+
+@font-face {
+		font-family: '28_days';
+		src: url('../../vendors/fonts/28_days_later-webfont.eot');
+		src: url('../../vendors/fonts/28_days_later-webfont.eot?#iefix')
+				 format('embedded-opentype'),
+				 url('../../vendors/fonts/28_days_later-webfont.woff2')
+				 format('woff2'),
+				 url('../../vendors/fonts/28_days_later-webfont.woff')
+				 format('woff'),
+				 url('../../vendors/fonts/28_days_later-webfont.ttf')
+				 format('truetype');
+		font-weight: normal;
+		font-style: normal;
+
+}
+
+
+/* -------------------	MAIN STYLES  --------------------- */
+
+/* All images and videos will be set to 100% of their parent container  */
+
+img, video{
+		width: 100%
+
+}
+
+
+body {
+		font-family: sans-serif;
+		font-size: 16px;
+		margin: 0;
+		padding: 0;
+
+		font-family: 'Mukta', sans-serif;
+
+
+}
+
+/*-------------------------------------------------------*/
+
+/*------------------ GLOBAL STYLE  ----------------------*/
+
+a{
+
+		text-decoration: none;
+}
+
+/*------------------------------------------------------- */
+
+/* ------------------HOME PAGE STYLE--------------------- */
+
+.homeBgImage{
+		position: relative;
+		background-image: url(../img/trainerHomePage.jpg);
+		background-repeat: no-repeat;
+		background-position: center 0;
+		background-size: cover;
+		background-attachment: fixed;
+		width: 100%;
+		height: 100vh;
+}
+
+.logoC{
+		position: absolute;
+		width: 35px;
+		top:3px;
+		left: 7px;
+}
+
+.cartIcon{
+		position: absolute;
+		top: 7px;
+		left: 45vw;
+	/*	width:  100%; */
+
+}
+
+.fa-shopping-basket{
+
+		/* 1em is the default (16px) we use em to make sure it is scalable */
+		font-size: 2em;
+		color: rgb(183, 154, 246);
+}
+
+/* This is for the 3 bar menu button */
+
+.navBtn {
+
+		font-size: 2.5em;
+		cursor: pointer;
+		color: #FFFFFF;
+		margin: 0 0 0 85vw;
+		padding: 7px 3% 0 3%;
+		background-color: rgba(0, 0, 0, 0.5);
+
+
+}
+
+.navC{
+
+		background-color: rgb(53, 38, 80);
+		border-bottom: 1px solid rgb(183, 154, 246);
+
+}
+
+nav li a{
+		color: white;
+		display: block;
+		text-align: right;
+}
+
+.menuList{
+		 list-style-type: none;
+		 padding: 0;
+		 display: none;
+}
+
+.menuList a{
+
+		 padding: 10px;
+}
+
+#headerC{
+			position: fixed;
+			width: 100%;
+}
+
+.mainHeading{
+
+			font-family: 'Lovers Quarrel', cursive;
+			color: #ffffff;
+			letter-spacing: 3px;
+			font-size: 2em;
+			text-align: center;
+			font-weight: lighter;
+
+			/* review this */
+			margin: 35vh auto 0 auto;
+
+}
+
+
+
+.slogan{
+
+		padding: 30vh 4vw 0 60vw;
+		font-family: '28_days';
+		color: rgb(205, 205, 205);
+		font-size: 2em;
+		text-align: right;
+		/* position: relative;
+		top: 25vh;
+		Letter spacing: 3px;
+		padding-left: 65%; */
+
+
+}
+
+
+
+.newButton{
+
+			/* set a border */
+			border: 1px solid #ffffff;
+			/* change redius for rounded corners   */
+			border-radius: 5px;
+			/* background color */
+			background-color: rgba(200, 177, 250, 0.3);
+			padding: 15px 10px;
+			color: white;
+			margin: 0 0 0 35vw;
+
+
+}
+
+/*  ---------------------- PRODUCT PAGE ------------------ */
+
+
+
+h1{
+
+		font-size: 1.7em;
+		text-align: center;
+		font-weight: lighter;
+		text-transform: uppercase;
+		color: #313131;
+
+}
+
+
+p {
+
+		text-align: center;
+
+}
+
+.addToCart{
+
+		border: 1px solid rgb(200, 177, 250);
+		border-radius: 5px;
+		background-color: rgb(53, 38, 80);
+		color: #ffffff;
+		padding: 15px 20px;
+		margin: 0 0 0 0vw;
+
+}
+
+.addToCart a{
+
+			color: #ffffff;
+
+}
+
+.addToCart a:after{
+
+			font-family: "Font Awesome 5 Free";
+			font-weight: 900;
+			content: "\f07a";
+
+}
+
+
+
+article{
+
+			text-align: center;
+
+}
+
+.telNumber{
+
+		border: 1px solid rgb(200, 177, 250);
+		border-radius: 5px;
+		background-color: rgb(53, 38, 80);
+		color: #ffffff;
+		padding: 15px 20px;
+		margin: 0 0 0 0vw;
+
+}
+
+
+.telNumber a{
+
+			color: #ffffff;
+
+}
+
+.telNumber a:before{
+
+			font-family: "Font Awesome 5 Free";
+			font-weight: 900;
+			/* -ms-transform: rotate(90deg);
+			-webkit-transform: rotate(90deg);
+			transform: rotate(90deg);  */
+			content: "\f095";
+
+}
+
+
+.emailUs{
+
+		border: 1px solid rgb(200, 177, 250);
+		border-radius: 5px;
+		background-color: rgb(53, 38, 80);
+		color: #ffffff;
+		padding: 15px 20px;
+		margin: 0 0 0 0vw;
+
+}
+
+
+.emailUs a{
+
+			color: #ffffff;
+
+}
+
+.emailUs a:before{
+
+			font-family: "Font Awesome 5 Free";
+			font-weight: 900;
+			content: "\f0e0";
+
+}
+
+
+
+
+/*  ------------------------------------------------------ */
+
+
+
+
+/* ------------------- MEDIA QUERIES ------------------  */
+
+@media screen and (min-width: 568px ) {
+
+			/*	.slogan{
+
+						color: red;
+						font-size: 3em;
+
+					}
+			 */
+
+	 .mainHeading{
+
+			margin: 35vh 0 0 60vw;
+			padding-bottom: 5px;
+
+
+		}
+
+		.newButton{
+
+			margin: 0 0 0 70vw;
+
+		}
+
+}
+
+
+/*  ------------ MEDIA QUERY FOR TABLETS  ------------ */
+
+@media screen and (min-width: 768px){
+
+
+		 .mainHeading{
+
+			margin: 35vh 0 0 70vw;
+			padding-bottom: 10px;
+
+
+		}
+
+	.newButton{
+
+			margin: 0 0 0 80vw;
+
+		}
+
+}
+
+
+/*  ------------ MEDIA QUERY FOR DESKTOP  ------------ */
+
+@media screen and (min-width: 1024px){
+
+			.menuList {
+
+						display: inline;
+			 }
+
+			nav a{
+
+					font-size: 1em;
+					letter-spacing: 1px;
+					text-transform: uppercase;
+
+			 }
+
+
+			nav a:hover{
+
+					color: #f500ff;
+			}
+
+		 .menuList a{
+
+					padding: 10px;
+			}
+
+
+			.cartIcon, .navBtn {
+
+						display: none;
+			}
+
+			.logoC {
+
+						width: 100px;
+						top: 10vh;
+						left: 5vw;
+
+			 }
+
+
+
+
+			.slogan{
+
+					position: absolute;
+					top: 15vh;
+					right: 10vw;
+
+
+			 }
+
+		 .mainHeading{
+
+			position: absolute;
+			top: 37vh;
+			left: 3vw;
+			 margin: 30vh 10vw 0 1vw;
+
+
+
+			 }
+
+			 .newButton {
+
+				 margin: 80vh 0 20vw 6vw;
+
+				}
+
+
+}
+
+
+
+
+
+
