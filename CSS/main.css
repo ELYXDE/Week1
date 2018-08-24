@@ -77,6 +77,11 @@ a{
 
 /* ------------------HOME PAGE STYLE--------------------- */
 
+.myVideo{
+
+			display: none;
+}
+
 .homeBgImage{
 		position: relative;
 		background-image: url(../img/trainerHomePage.jpg);
@@ -93,6 +98,8 @@ a{
 		width: 35px;
 		top:3px;
 		left: 7px;
+		position: fixed;
+		z-index: 110;
 }
 
 .cartIcon{
@@ -151,6 +158,7 @@ nav li a{
 #headerC{
 			position: fixed;
 			width: 100%;
+			z-index: 100;
 }
 
 .mainHeading{
@@ -201,7 +209,7 @@ nav li a{
 
 }
 
-/*  ---------------------- PRODUCT PAGE ------------------ */
+/*  ---------------------- PRODUCT & SALES PAGE ------------------ */
 
 
 
@@ -248,12 +256,35 @@ p {
 }
 
 
+.allTrainers{
+
+		display: flex;
+
+		flex-wrap: wrap;
+
+		justify-content: center;
+		width: 100%;
+		height: auto;
+
+}
+
 
 article{
 
+			margin: 1%;
+			width: 270px;
 			text-align: center;
 
 }
+
+
+figcaption{
+
+			font-size: 0.8em;
+			margin: 0 auto 10px auto;
+			padding: 0 auto;
+}
+
 
 .telNumber{
 
@@ -314,6 +345,7 @@ article{
 
 
 
+
 /*  ------------------------------------------------------ */
 
 
@@ -370,18 +402,30 @@ article{
 }
 
 
+
+
+
 /*  ------------ MEDIA QUERY FOR DESKTOP  ------------ */
 
 @media screen and (min-width: 1024px){
+
+/* ------------------ NAVIGATION --------------------- */
+
 
 			.menuList {
 
 						display: inline;
 			 }
 
+			.navC {
+							border-bottom: none;
+							text-align: right;
+							padding: 10px 0;
+				}
+
 			nav a{
 
-					font-size: 1em;
+					font-size: 0.7em;
 					letter-spacing: 1px;
 					text-transform: uppercase;
 
@@ -395,8 +439,15 @@ article{
 
 		 .menuList a{
 
-					padding: 10px;
+					 padding: 0 20px;
+					 text-align: center;
+					 display: inline;
+						 margin: 0 5px;
 			}
+
+			.menuList li {
+					 display: inline;
+				}
 
 
 			.cartIcon, .navBtn {
@@ -406,10 +457,11 @@ article{
 
 			.logoC {
 
+						position: absolute;
 						width: 100px;
 						top: 10vh;
 						left: 5vw;
-
+						z-index: 90;
 			 }
 
 
@@ -424,6 +476,10 @@ article{
 
 			 }
 
+			#headerC {
+					z-index: 100;
+			}
+
 		 .mainHeading{
 
 			position: absolute;
@@ -437,15 +493,59 @@ article{
 
 			 .newButton {
 
-				 margin: 80vh 0 20vw 6vw;
+				 margin: 72vh 0 20vw 7vw;
+
 
 				}
 
+				.productClass {
+
+						z-index: 7;
+				}
+
+				.salesClass{
+
+						z-index: 7;
+				}
 
 }
 
 
+/*  ------------ MEDIA QUERY FOR LARGER SCREENS  ------------ */
+
+@media screen and (min-width: 1280px){
 
 
+				 .newButton {
 
+				 margin: 72vh 0 20vh 6vw;
+
+
+				}
+
+
+				.homeBgImage{
+
+						background-image: none;
+				}
+
+				.myVideo{
+
+						display: inline-block;
+						position: absolute;
+						top: 0;
+						width: 100%;
+						height: auto;
+						background-size: cover;
+						min-height: 100%;
+						min-width: 100%;
+						z-index: -100;
+				}
+
+				.largerScreen{
+						overflow-y: hidden;
+						background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8));
+				}
+
+}
 
